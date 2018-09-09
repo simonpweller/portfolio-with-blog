@@ -1,0 +1,17 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": ["airbnb", "plugin:react/recommended"],
+  "plugins": ["react"],
+  "rules": {
+    "no-use-before-define": ["error", { "functions": false }],
+    "no-shadow": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-extraneous-dependencies": 0
+  },
+  "globals": {
+    "graphql": false
+  }
+}

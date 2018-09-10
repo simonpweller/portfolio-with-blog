@@ -29,3 +29,22 @@ a {
   color: inherit;
 }
 
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+}
+
+
+.wrapper.fw {
+  max-width: 100%;
+}
+
+section {
+  padding-bottom: 40px;
+}
+
+.section--alt {
+  background: #fff;
+  color: rgb(30, 30, 30);
+}

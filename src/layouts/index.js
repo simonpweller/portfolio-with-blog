@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import TopNav from '../components/topnav/topnav';
+import Hero from '../components/hero/hero';
 import './index.css';
 
 const Layout = ({ children, data }) => (
@@ -15,6 +16,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <TopNav />
+    <Hero image={data.file.childImageSharp} />
     <div>
       {children()}
     </div>
@@ -39,6 +41,13 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    file(relativePath: {eq: "images/janko-ferlic-174927-unsplash.jpg"}) {
+      childImageSharp {
+        sizes(maxWidth: 2000) {
+          ...GatsbyImageSharpSizes
+        }
       }
     }
   }

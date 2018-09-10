@@ -1,0 +1,31 @@
+.hero {
+  /* cancel section padding */
+  padding-bottom: 0;
+  height: 100vh;
+  /* avoid scroll bar on empty page */
+  overflow: hidden;
+}
+
+/* position on top of hero image */
+.hero-content {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  .hero-content {
+    top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-content {
+    top: 20px;
+  }
+}
+  
+.hero-content h1 {
+  margin-bottom: 0
+}

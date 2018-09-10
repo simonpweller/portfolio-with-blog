@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+  
+body {
+  background: rgb(30, 30, 30);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Merryweather', serif;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+a {
+  color: inherit;
+}
+

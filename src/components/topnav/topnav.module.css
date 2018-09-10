@@ -1,0 +1,71 @@
+.topnav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 20px;
+  background: rgba(30, 30, 30, 0.75);
+}
+
+.links {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links a {
+  font-family: 'Merryweather', serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 20px;
+  width: 120px;
+  white-space: nowrap;
+  display: block;
+}
+
+.links a:hover {
+  font-weight: 700;
+}
+
+.topnav button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+  /* inherit color and font-size to pass along to nested links; */
+  color: inherit;
+  font-size: inherit;
+}
+
+@media (max-width: 500px) {
+  .topnav button {
+    display: block
+  }
+  .links {
+    flex-direction: column;
+    position: fixed;
+    left: 100%;
+    top: 60px;
+    width: 50%;
+    background: rgba(30, 30, 30, 0.75);
+    transform: translateX(0);
+    transition: all 1s;
+  }
+  .links a {
+    width: auto;
+    text-align: right;
+    margin: 0;
+    padding: 10px 20px 10px 0;
+  
+  }
+  .topnav.is-open .links {
+    transform: translateX(-100%);
+  }  
+}

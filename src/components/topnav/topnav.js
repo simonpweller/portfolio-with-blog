@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import HamburgerButton from '../hamburger-button/hamburger-button';
 import './topnav.module.css';
 
@@ -10,11 +9,18 @@ export default class TopNav extends Component {
 
   render() {
     const { open } = this.state;
-    const { children } = this.props;
     return (
       <nav styleName={`topnav${open ? ' is-open' : ''}`}>
         <ul styleName="links">
-          {children}
+          <li>
+            <a href="/#about">About</a>
+          </li>
+          <li>
+            <a href="/#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="/#contact">Contact</a>
+          </li>
         </ul>
         <HamburgerButton
           open={open}
@@ -24,7 +30,3 @@ export default class TopNav extends Component {
     );
   }
 }
-
-TopNav.propTypes = {
-  children: PropTypes.node.isRequired,
-};

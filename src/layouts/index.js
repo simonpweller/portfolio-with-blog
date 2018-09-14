@@ -17,9 +17,9 @@ const Layout = ({ children, data }) => (
     />
     <TopNav />
     <Hero image={data.file.childImageSharp} />
-    <div>
+    <main>
       {children()}
-    </div>
+    </main>
   </div>
 );
 

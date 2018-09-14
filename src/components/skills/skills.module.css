@@ -1,0 +1,62 @@
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.skill {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 19%;
+	height: 100%;
+}
+
+.skill .label {
+	font-weight: 700;
+	min-width: 50px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+@media (max-width: 500px) {
+	.skill {
+    width: 18%;
+		padding-bottom: 10px;
+  }
+  .skill .label {
+		display: none;
+	}
+}
+
+.icon {
+	width: 100%;
+	height: 100%;
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.icon.text {
+	width: 20px / 1.25;
+	height: 20px / 1.25;
+	margin: 0 20px / 5;
+}
+
+.icon.text.freecodecamp {
+	width: 24.32px;
+}
+
+.icon path:first-of-type {
+	color: #fff;
+	fill: currentColor;
+}
+
+.icon path:nth-of-type(2) {
+	color: #1e1e1e;
+	fill: currentColor;
+}
+
+.icon path.path-secondary {
+	color: #fff;
+	fill: currentColor;
+}

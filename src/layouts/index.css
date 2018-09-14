@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,700');
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +16,7 @@ body {
 
 h1 {
   font-size: 80px;
-  font-family: 'Merryweather', serif;
+  font-family: 'Merriweather', serif;
 }
 
 h2 {
@@ -22,7 +24,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 a {

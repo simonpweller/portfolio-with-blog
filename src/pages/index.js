@@ -1,8 +1,12 @@
 import React from 'react';
 import Skills from '../components/skills/skills';
+import Contact from '../components/contact/contact';
 
 const IndexPage = () => (
-  <Skills id="about" />
+  <div>
+    <Skills id="about" />
+    <Contact />
+  </div>
 );
 
 export default IndexPage;

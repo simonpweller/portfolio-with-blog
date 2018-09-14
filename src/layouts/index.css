@@ -50,3 +50,16 @@ section {
   background: #fff;
   color: rgb(30, 30, 30);
 }
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+address > * {
+  min-width: 200px;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}

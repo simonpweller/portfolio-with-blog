@@ -28,35 +28,3 @@
 		display: none;
 	}
 }
-
-.icon {
-	width: 100%;
-	height: 100%;
-	max-width: 150px;
-	max-height: 150px;
-}
-
-.icon.text {
-	width: 20px / 1.25;
-	height: 20px / 1.25;
-	margin: 0 20px / 5;
-}
-
-.icon.text.freecodecamp {
-	width: 24.32px;
-}
-
-.icon path:first-of-type {
-	color: #fff;
-	fill: currentColor;
-}
-
-.icon path:nth-of-type(2) {
-	color: #1e1e1e;
-	fill: currentColor;
-}
-
-.icon path.path-secondary {
-	color: #fff;
-	fill: currentColor;
-}

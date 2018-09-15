@@ -7,7 +7,7 @@ const Hero = ({ image }) => (
   <section styleName="hero">
     <Img
       style={{ width: '100vw', height: '100vh' }}
-      imgStyle={{ opacity: '0.8' }}
+      imgStyle={{ filter: 'brightness(0.7)' }}
       sizes={image.sizes}
     />
     <div styleName="hero-content">

@@ -9,7 +9,12 @@ const IndexPage = ({ data }) => (
   <div>
     <Skills id="about" />
     <Contact />
-    <Project image={data.file.childImageSharp} name="Bar Chart" />
+    <Project
+      image={data.file.childImageSharp}
+      name="Bar Chart"
+      url="https://d3-chart-demos.herokuapp.com/bar.html"
+      github="https://github.com/faktotum85/d3-demos"
+    />
   </div>
 );
 
@@ -19,7 +24,7 @@ export const query = graphql`
   query ProjectImages {
     file(relativePath: {eq: "images/portfolio/bar-chart.png"}) {
       childImageSharp {
-        sizes(maxWidth: 800) {
+        sizes(maxHeight: 400) {
           ...GatsbyImageSharpSizes
         }
       }

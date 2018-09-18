@@ -1,19 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
 import './project.module.css';
 
 const Project = ({
-  image, name, brief, onCodepen, url, github,
+  image, name, brief, onCodepen, url, github, background,
 }) => (
-  <div styleName="project">
-    <Img
-      resolutions={image.resolutions}
-      style={{
-        width: '100%', height: '100%', display: 'flex', justifyContent: 'center',
-      }}
-      imgStyle={{ width: 'auto', left: 'unset' }}
-    />
+  <div styleName="project" style={background ? { backgroundColor: background } : null}>
+    <img src={image} alt={name} />
     <div styleName="label">
       <div styleName="name">{name}</div>
       <div>
@@ -39,15 +32,17 @@ const Project = ({
 export default Project;
 
 Project.propTypes = {
-  image: gatsbyImage.isRequired,
+  image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   brief: PropTypes.string.isRequired,
   onCodepen: PropTypes.bool,
   url: PropTypes.string.isRequired,
   github: PropTypes.string,
+  background: PropTypes.string,
 };
 
 Project.defaultProps = {
   onCodepen: false,
   github: null,
+  background: '',
 };

@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import TopNav from '../components/topnav/topnav';
 import Hero from '../components/hero/hero';
 import './index.css';
+import favicon from '../images/favicon.ico';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -14,7 +15,9 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+    >
+      <link rel="icon" href={favicon} sizes="16x16" />
+    </Helmet>
     <TopNav />
     <Hero image={data.file.childImageSharp} />
     <main>

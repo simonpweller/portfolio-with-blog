@@ -4,6 +4,7 @@ import GatsbyImage from '../propTypes/gatsby-image';
 import Skills from '../components/skills/skills';
 import Contact from '../components/contact/contact';
 import Project from '../components/project/project';
+import './index.module.css';
 
 const IndexPage = ({ data }) => (
   <div>
@@ -12,7 +13,7 @@ const IndexPage = ({ data }) => (
       <div className="wrapper fw">
         <h2>Things I have built</h2>
         <h3>Web Applications</h3>
-        <div className="portfolio">
+        <div styleName="portfolio">
           <Project
             name="Pinterest Clone with masonry.js"
             image={data.pinterest.childImageSharp}
@@ -50,7 +51,7 @@ const IndexPage = ({ data }) => (
           />
         </div>
         <h3>Data Visualizations (with D3.js)</h3>
-        <div className="portfolio">
+        <div styleName="portfolio">
           <Project
             name="Bar Chart"
             image={data.bar.childImageSharp}
@@ -88,7 +89,7 @@ const IndexPage = ({ data }) => (
           />
         </div>
         <h3>Javascript Applets</h3>
-        <div className="portfolio">
+        <div styleName="portfolio">
           <Project
             name="Javascript Calculator"
             image={data.calculator.childImageSharp}
@@ -187,8 +188,8 @@ export const query = graphql`
 
   fragment projectImage on File {
     childImageSharp {
-      sizes(maxHeight: 400) {
-        ...GatsbyImageSharpSizes
+      resolutions {
+        ...GatsbyImageSharpResolutions
       }
     }
   }

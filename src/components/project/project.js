@@ -1,15 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
-import gatsbyImage from '../../propTypes/gatsby-image';
+import './project.module.css';
 
 const Project = ({
   image, name, brief, onCodepen, url, github,
 }) => (
-  <div className="project">
-    <Img sizes={image.sizes} />
-    <div className="label">
-      <div className="name">{name}</div>
+  <div styleName="project">
+    <Img
+      resolutions={image.resolutions}
+      style={{
+        width: '100%', height: '100%', display: 'flex', justifyContent: 'center',
+      }}
+      imgStyle={{ width: 'auto', left: 'unset' }}
+    />
+    <div styleName="label">
+      <div styleName="name">{name}</div>
       <div>
         <a href={brief} target="_blank" rel="noopener noreferrer">Brief</a>
         &nbsp;on freeCodeCamp

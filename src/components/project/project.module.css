@@ -1,0 +1,55 @@
+.project {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.project .label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(30, 30, 30);
+  color: #fff;
+  opacity: 0;
+  transition: all 1s;
+  padding: 10px 0;
+}
+
+.project .name {
+  font-weight: bold;
+}
+
+.project:hover .label {
+  opacity: 0.75;
+}
+
+@media (max-width: 500px) {
+  .project {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 501px) {
+  .project {
+    flex: 1;
+    width: 100px;
+    height: 400px;
+    transition: all 1s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .project:hover {
+    flex: 4
+  }
+  .project img {
+    position: relative;
+  }
+}

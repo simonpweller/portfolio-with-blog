@@ -16,14 +16,14 @@ const IndexPage = ({ data }) => (
           <Project
             name="Pinterest Clone with masonry.js"
             image={data.pinterest.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Build%20a%20Pinterest%20Clone"
+            brief="https://www.freecodecamp.org/challenges/build-a-pinterest-clone"
             url="https://infinite-headland-31227.herokuapp.com/"
             github="https://github.com/faktotum85/pinterest-clone"
           />
           <Project
             name="Stockmarket watch with websockets"
             image={data.stocks.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Chart%20the%20Stock%20Market"
+            brief="https://www.freecodecamp.org/challenges/chart-the-stock-market"
             url="https://fcc-stockwatch.herokuapp.com/"
             github="https://github.com/faktotum85/fcc-stockwatch"
           />
@@ -37,14 +37,14 @@ const IndexPage = ({ data }) => (
           <Project
             name="Game of Life in React"
             image={data.gol.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Build%20the%20Game%20of%20Life"
+            brief="https://www.freecodecamp.org/challenges/build-the-game-of-life"
             url="https://fcc-gol.herokuapp.com/"
             github="https://github.com/faktotum85/fcc-game-of-life"
           />
           <Project
             name="Book Trading Club with Google Books API"
             image={data.btc.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Manage%20a%20Book%20Trading%20Club"
+            brief="https://www.freecodecamp.org/challenges/manage-a-book-trading-club"
             url="https://my-fcc-bookclub.herokuapp.com/"
             github="https://github.com/faktotum85/fcc-bookclub"
           />
@@ -54,35 +54,35 @@ const IndexPage = ({ data }) => (
           <Project
             name="Bar Chart"
             image={data.bar.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Visualize%20Data%20with%20a%20Bar%20Chart"
+            brief="https://www.freecodecamp.org/challenges/visualize-data-with-a-bar-chart"
             url="https://d3-chart-demos.herokuapp.com/bar.html"
             github="https://github.com/faktotum85/d3-demos"
           />
           <Project
             name="Heatmap Chart"
             image={data.heatmap.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Visualize%20Data%20with%20a%20Heat%20Map"
+            brief="https://www.freecodecamp.org/challenges/visualize-data-with-a-heat-map"
             url="https://d3-chart-demos.herokuapp.com/heatmap.html"
             github="https://github.com/faktotum85/d3-demos"
           />
           <Project
             name="Force-directed Visualization"
             image={data.force.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Show%20National%20Contiguity%20with%20a%20Force%20Directed%20Graph"
+            brief="https://www.freecodecamp.org/challenges/show-national-contiguity-with-a-force-directed-graph"
             url="https://d3-chart-demos.herokuapp.com/force-directed.html"
             github="https://github.com/faktotum85/d3-demos"
           />
           <Project
             name="Map Visualization of Meteor Strikes"
             image={data.map.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Map%20Data%20Across%20the%20Globe"
+            brief="https://www.freecodecamp.org/challenges/map-data-across-the-globe"
             url="https://d3-chart-demos.herokuapp.com/map.html"
             github="https://github.com/faktotum85/d3-demos"
           />
           <Project
             name="Scatter Chart"
             image={data.scatter.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Visualize%20Data%20with%20a%20Scatterplot%20Graph"
+            brief="https://www.freecodecamp.org/challenges/visualize-data-with-a-scatterplot-graph"
             url="https://d3-chart-demos.herokuapp.com/scatter.html"
             github="https://github.com/faktotum85/d3-demos"
           />
@@ -100,14 +100,14 @@ const IndexPage = ({ data }) => (
           <Project
             name="Game of Simon"
             image={data.simon.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Build%20a%20Simon%20Game"
+            brief="https://www.freecodecamp.org/challenges/build-a-simon-game"
             url="https://codepen.io/faktotum85/pen/wqJmGw"
             onCodepen
           />
           <Project
             name="Quote Generator"
             image={data.quote.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Build%20a%20Random%20Quote%20Machine"
+            brief="https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
             url="https://codepen.io/faktotum85/pen/oexRVg"
             onCodepen
             background="#FB6964"
@@ -115,14 +115,14 @@ const IndexPage = ({ data }) => (
           <Project
             name="Tic Tac Toe with AI opponent"
             image={data.ttt.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Build%20a%20Tic%20Tac%20Toe%20Game"
+            brief="https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
             url="https://codepen.io/faktotum85/pen/zdNXqb"
             onCodepen
           />
           <Project
             name="Pomodoro Clock"
             image={data.pomodoro.publicURL}
-            brief="https://www.freecodecamp.org/challenges/Build%20a%20Pomodoro%20Clock"
+            brief="https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
             url="https://codepen.io/faktotum85/pen/qXRmgY"
             onCodepen
             background="rgb(51, 51, 51)"

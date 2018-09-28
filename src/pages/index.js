@@ -18,35 +18,35 @@ const IndexPage = ({ data }) => (
             image={data.pinterest.publicURL}
             brief="https://www.freecodecamp.org/challenges/build-a-pinterest-clone"
             url="https://infinite-headland-31227.herokuapp.com/"
-            github="https://github.com/faktotum85/pinterest-clone"
+            github="https://github.com/simonpweller/pinterest-clone"
           />
           <Project
             name="Stockmarket watch with websockets"
             image={data.stocks.publicURL}
             brief="https://www.freecodecamp.org/challenges/chart-the-stock-market"
             url="https://fcc-stockwatch.herokuapp.com/"
-            github="https://github.com/faktotum85/fcc-stockwatch"
+            github="https://github.com/simonpweller/fcc-stockwatch"
           />
           <Project
             name="Nightlife coordination with Yelp API"
             image={data.nightlife.publicURL}
             brief="https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
             url="https://fcc-nl-app.herokuapp.com/search?location=Berlin"
-            github="https://github.com/faktotum85/fcc-nightlife"
+            github="https://github.com/simonpweller/fcc-nightlife"
           />
           <Project
             name="Game of Life in React"
             image={data.gol.publicURL}
             brief="https://www.freecodecamp.org/challenges/build-the-game-of-life"
             url="https://fcc-gol.herokuapp.com/"
-            github="https://github.com/faktotum85/fcc-game-of-life"
+            github="https://github.com/simonpweller/fcc-game-of-life"
           />
           <Project
             name="Book Trading Club with Google Books API"
             image={data.btc.publicURL}
             brief="https://www.freecodecamp.org/challenges/manage-a-book-trading-club"
             url="https://my-fcc-bookclub.herokuapp.com/"
-            github="https://github.com/faktotum85/fcc-bookclub"
+            github="https://github.com/simonpweller/fcc-bookclub"
           />
         </div>
         <h3>Data Visualizations (with D3.js)</h3>
@@ -56,35 +56,35 @@ const IndexPage = ({ data }) => (
             image={data.bar.publicURL}
             brief="https://www.freecodecamp.org/challenges/visualize-data-with-a-bar-chart"
             url="https://d3-chart-demos.herokuapp.com/bar.html"
-            github="https://github.com/faktotum85/d3-demos"
+            github="https://github.com/simonpweller/d3-demos"
           />
           <Project
             name="Heatmap Chart"
             image={data.heatmap.publicURL}
             brief="https://www.freecodecamp.org/challenges/visualize-data-with-a-heat-map"
             url="https://d3-chart-demos.herokuapp.com/heatmap.html"
-            github="https://github.com/faktotum85/d3-demos"
+            github="https://github.com/simonpweller/d3-demos"
           />
           <Project
             name="Force-directed Visualization"
             image={data.force.publicURL}
             brief="https://www.freecodecamp.org/challenges/show-national-contiguity-with-a-force-directed-graph"
             url="https://d3-chart-demos.herokuapp.com/force-directed.html"
-            github="https://github.com/faktotum85/d3-demos"
+            github="https://github.com/simonpweller/d3-demos"
           />
           <Project
             name="Map Visualization of Meteor Strikes"
             image={data.map.publicURL}
             brief="https://www.freecodecamp.org/challenges/map-data-across-the-globe"
             url="https://d3-chart-demos.herokuapp.com/map.html"
-            github="https://github.com/faktotum85/d3-demos"
+            github="https://github.com/simonpweller/d3-demos"
           />
           <Project
             name="Scatter Chart"
             image={data.scatter.publicURL}
             brief="https://www.freecodecamp.org/challenges/visualize-data-with-a-scatterplot-graph"
             url="https://d3-chart-demos.herokuapp.com/scatter.html"
-            github="https://github.com/faktotum85/d3-demos"
+            github="https://github.com/simonpweller/d3-demos"
           />
         </div>
         <h3>Javascript Applets</h3>
@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => (
             name="Javascript Calculator"
             image={data.calculator.publicURL}
             brief="https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
-            url="https://codepen.io/faktotum85/pen/LjxYYX"
+            url="https://codepen.io/simonpweller/pen/LjxYYX"
             onCodepen
             background="rgb(153, 153, 153)"
           />
@@ -101,14 +101,14 @@ const IndexPage = ({ data }) => (
             name="Game of Simon"
             image={data.simon.publicURL}
             brief="https://www.freecodecamp.org/challenges/build-a-simon-game"
-            url="https://codepen.io/faktotum85/pen/wqJmGw"
+            url="https://codepen.io/simonpweller/pen/wqJmGw"
             onCodepen
           />
           <Project
             name="Quote Generator"
             image={data.quote.publicURL}
             brief="https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
-            url="https://codepen.io/faktotum85/pen/oexRVg"
+            url="https://codepen.io/simonpweller/pen/oexRVg"
             onCodepen
             background="#FB6964"
           />
@@ -116,14 +116,14 @@ const IndexPage = ({ data }) => (
             name="Tic Tac Toe with AI opponent"
             image={data.ttt.publicURL}
             brief="https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
-            url="https://codepen.io/faktotum85/pen/zdNXqb"
+            url="https://codepen.io/simonpweller/pen/zdNXqb"
             onCodepen
           />
           <Project
             name="Pomodoro Clock"
             image={data.pomodoro.publicURL}
             brief="https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
-            url="https://codepen.io/faktotum85/pen/qXRmgY"
+            url="https://codepen.io/simonpweller/pen/qXRmgY"
             onCodepen
             background="rgb(51, 51, 51)"
           />

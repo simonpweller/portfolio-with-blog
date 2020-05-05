@@ -110,7 +110,7 @@ const IndexPage = ({ data }) => (
               name="Quote Generator"
               image={data.quote.publicURL}
               brief="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine"
-              url="https://codepen.io/simonpweller/pen/oexRVg"
+              url="https://codepen.io/simonpweller/pen/gOaGWxB"
               onCodepen
               background="#FB6964"
             />

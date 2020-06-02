@@ -12,84 +12,7 @@ const IndexPage = ({ data }) => (
       <Skills id="about" />
       <section id="portfolio" className="section--alt">
         <div className="wrapper fw">
-          <h2>Portfolio projects</h2>
-          <h3>Web Applications</h3>
-          <div styleName="portfolio">
-            <Project
-              name="Pinterest Clone with masonry.js"
-              image={data.pinterest.publicURL}
-              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-pinterest-clone"
-              url="https://infinite-headland-31227.herokuapp.com/"
-              github="https://github.com/simonpweller/pinterest-clone"
-            />
-            <Project
-              name="Stockmarket watch with websockets"
-              image={data.stocks.publicURL}
-              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/chart-the-stock-market"
-              url="https://fcc-stockwatch.herokuapp.com/"
-              github="https://github.com/simonpweller/fcc-stockwatch"
-            />
-            <Project
-              name="Nightlife coordination with Yelp API"
-              image={data.nightlife.publicURL}
-              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-nightlife-coordination-app"
-              url="https://fcc-nl-app.herokuapp.com/search?location=Berlin"
-              github="https://github.com/simonpweller/fcc-nightlife"
-            />
-            <Project
-              name="Game of Life in React & Typescript"
-              image={data.gol.publicURL}
-              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-the-game-of-life"
-              url="https://fcc-game-of-life-v2.netlify.com/"
-              github="https://github.com/simonpweller/fcc-game-of-life-v2"
-            />
-            <Project
-              name="Book Trading Club with Google Books API"
-              image={data.btc.publicURL}
-              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/manage-a-book-trading-club"
-              url="https://my-fcc-bookclub.herokuapp.com/"
-              github="https://github.com/simonpweller/fcc-bookclub"
-            />
-          </div>
-          <h3>Data Visualizations (with D3.js)</h3>
-          <div styleName="portfolio">
-            <Project
-              name="Bar Chart"
-              image={data.bar.publicURL}
-              brief="https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-bar-chart"
-              url="https://d3-chart-demos.herokuapp.com/bar.html"
-              github="https://github.com/simonpweller/d3-demos"
-            />
-            <Project
-              name="Heatmap Chart"
-              image={data.heatmap.publicURL}
-              brief="https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-heat-map"
-              url="https://d3-chart-demos.herokuapp.com/heatmap.html"
-              github="https://github.com/simonpweller/d3-demos"
-            />
-            <Project
-              name="Force-directed Visualization"
-              image={data.force.publicURL}
-              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/show-national-contiguity-with-a-force-directed-graph"
-              url="https://d3-chart-demos.herokuapp.com/force-directed.html"
-              github="https://github.com/simonpweller/d3-demos"
-            />
-            <Project
-              name="Map Visualization of Meteor Strikes"
-              image={data.map.publicURL}
-              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/map-data-across-the-globe"
-              url="https://d3-chart-demos.herokuapp.com/map.html"
-              github="https://github.com/simonpweller/d3-demos"
-            />
-            <Project
-              name="Scatter Chart"
-              image={data.scatter.publicURL}
-              brief="https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-scatterplot-graph"
-              url="https://d3-chart-demos.herokuapp.com/scatter.html"
-              github="https://github.com/simonpweller/d3-demos"
-            />
-          </div>
-          <h3>Javascript Applets</h3>
+          <h2>Demo applets</h2>
           <div styleName="portfolio">
             <Project
               name="Javascript Calculator"
@@ -100,11 +23,11 @@ const IndexPage = ({ data }) => (
               background="rgb(153, 153, 153)"
             />
             <Project
-              name="Game of Simon"
-              image={data.simon.publicURL}
-              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-simon-game"
-              url="https://codepen.io/simonpweller/pen/wqJmGw"
-              onCodepen
+              name="Game of Life in React & Typescript"
+              image={data.gol.publicURL}
+              brief="https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-the-game-of-life"
+              url="https://fcc-game-of-life-v2.netlify.com/"
+              github="https://github.com/simonpweller/fcc-game-of-life-v2"
             />
             <Project
               name="Quote Generator"
@@ -141,40 +64,10 @@ export default IndexPage;
 
 export const query = graphql`
   query ProjectImages {
-    pinterest: file(relativePath: {eq: "images/portfolio/pinterest-clone.png"}) {
-      publicURL
-    }
-    stocks: file(relativePath: {eq: "images/portfolio/stockmarket-watch.png"}) {
-      publicURL
-    }
-    nightlife: file(relativePath: {eq: "images/portfolio/nightlife-coordination.png"}) {
-      publicURL
-    }
     gol: file(relativePath: {eq: "images/portfolio/game-of-life.png"}) {
       publicURL
     }
-    btc: file(relativePath: {eq: "images/portfolio/book-trading-club.png"}) {
-      publicURL
-    }
-    bar: file(relativePath: {eq: "images/portfolio/bar-chart.png"}) {
-      publicURL
-    }
-    heatmap: file(relativePath: {eq: "images/portfolio/heatmap-chart.png"}) {
-      publicURL
-    }
-    force: file(relativePath: {eq: "images/portfolio/force-directed-chart.png"}) {
-      publicURL
-    }
-    map: file(relativePath: {eq: "images/portfolio/map-chart.png"}) {
-      publicURL
-    }
-    scatter: file(relativePath: {eq: "images/portfolio/scatter-chart.png"}) {
-      publicURL
-    }
     calculator: file(relativePath: {eq: "images/portfolio/javascript-calculator.png"}) {
-      publicURL
-    }
-    simon: file(relativePath: {eq: "images/portfolio/simon.png"}) {
       publicURL
     }
     quote: file(relativePath: {eq: "images/portfolio/quote-generator.png"}) {

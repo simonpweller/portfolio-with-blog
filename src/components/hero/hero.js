@@ -13,7 +13,7 @@ const Hero = ({ image }) => (
     <div styleName="hero-content">
       <div className="wrapper">
         <h1>Simon Weller</h1>
-        <h2>Web-Developer and lifelong learner</h2>
+        <h2>Web developer and lifelong learner</h2>
       </div>
     </div>
   </section>

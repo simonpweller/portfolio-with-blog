@@ -12,7 +12,9 @@ const IndexPage = ({ data }) => (
       <Skills id="about" />
       <section id="portfolio" className="section--alt">
         <div className="wrapper fw">
-          <h2>Demo applets</h2>
+          <h2>Toy apps</h2>
+          <p>I work on large enterprise applications and I enjoy it a lot. Controlling complexity, testing and refactoring fascinate me.</p>
+          <p>In my free time, I enjoy exploring tinkering with JavaScript and Typescript. Here are some tiny things I have built.</p>
           <div styleName="portfolio">
             <Project
               name="Javascript Calculator"
